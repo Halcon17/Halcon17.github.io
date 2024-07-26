@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+    <div class="container">
+        <img src="../contacto.png" alt="Imagen de encabezado" class="header-img">
+        <h2>DÉJAME TUS DATOS</h2>
+        <p style="text-align: right;"> <a href="index.html">Ir a Acerca de...</a> </p>
+        <form action="/submit_form" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="ciudad">Ciudad de donde se comunica</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
